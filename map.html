@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_945e538cf96c4c84843f5e99a9a19ef0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_945e538cf96c4c84843f5e99a9a19ef0" ></div>
+        
+</body>
+<script>    
+    
+            var map_945e538cf96c4c84843f5e99a9a19ef0 = L.map(
+                "map_945e538cf96c4c84843f5e99a9a19ef0",
+                {
+                    center: [42.870353, 74.615202],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 70,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7198af26cfb84db796879161cb079479 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_945e538cf96c4c84843f5e99a9a19ef0);
+        
+    
+            var circle_marker_b01519daf98940f38cccdd708ad9b4a5 = L.circleMarker(
+                [42.867001, 74.61216],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_945e538cf96c4c84843f5e99a9a19ef0);
+        
+    
+        var popup_eab78ae262a448bc8209540d271d840a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_853c48c7be274e17a93c9944fcbd065c = $(`<div id="html_853c48c7be274e17a93c9944fcbd065c" style="width: 100.0%; height: 100.0%;">г.Бишкек, ул. Абдрахманова,105</div>`)[0];
+            popup_eab78ae262a448bc8209540d271d840a.setContent(html_853c48c7be274e17a93c9944fcbd065c);
+        
+
+        circle_marker_b01519daf98940f38cccdd708ad9b4a5.bindPopup(popup_eab78ae262a448bc8209540d271d840a)
+        ;
+
+        
+    
+    
+            var circle_marker_e890c72b24294b10912ca8138ca105ce = L.circleMarker(
+                [42.867001, 74.61216],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_945e538cf96c4c84843f5e99a9a19ef0);
+        
+    
+        var popup_c58a94a10aee40bd84749d0efb617acf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4785d1a00914ca8ab9e5699935910f4 = $(`<div id="html_a4785d1a00914ca8ab9e5699935910f4" style="width: 100.0%; height: 100.0%;">г.Бишкек,ул.Абдрахманова,105(пересекает ул.Боконбаева)</div>`)[0];
+            popup_c58a94a10aee40bd84749d0efb617acf.setContent(html_a4785d1a00914ca8ab9e5699935910f4);
+        
+
+        circle_marker_e890c72b24294b10912ca8138ca105ce.bindPopup(popup_c58a94a10aee40bd84749d0efb617acf)
+        ;
+
+        
+    
+    
+            var circle_marker_0dc9604a0a4f4c7dacc4920c70d87e87 = L.circleMarker(
+                [42.875046000000005, 74.61479200000001],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_945e538cf96c4c84843f5e99a9a19ef0);
+        
+    
+        var popup_dc024d7a049844c28c41dcc87d1c9ada = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41a919c81ca641659ff32be97136800a = $(`<div id="html_41a919c81ca641659ff32be97136800a" style="width: 100.0%; height: 100.0%;">г.Бишкек, пр.Чуй,92 (Торговый центр «ГУМ»,«0»(нулевой) этаж, бутик М12)</div>`)[0];
+            popup_dc024d7a049844c28c41dcc87d1c9ada.setContent(html_41a919c81ca641659ff32be97136800a);
+        
+
+        circle_marker_0dc9604a0a4f4c7dacc4920c70d87e87.bindPopup(popup_dc024d7a049844c28c41dcc87d1c9ada)
+        ;
+
+        
+    
+    
+            var circle_marker_766136642e374ba5bc66ae7a7aec57e5 = L.circleMarker(
+                [42.875729, 74.618729],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_945e538cf96c4c84843f5e99a9a19ef0);
+        
+    
+        var popup_d62e00aab0dc4727858683ac674450d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf2c7943644640f2a4e3c9503cbf55cc = $(`<div id="html_cf2c7943644640f2a4e3c9503cbf55cc" style="width: 100.0%; height: 100.0%;">г.Бишкек,пр.Чуй,147, 1 этаж (пересекает ул.Ибраимова)</div>`)[0];
+            popup_d62e00aab0dc4727858683ac674450d7.setContent(html_cf2c7943644640f2a4e3c9503cbf55cc);
+        
+
+        circle_marker_766136642e374ba5bc66ae7a7aec57e5.bindPopup(popup_d62e00aab0dc4727858683ac674450d7)
+        ;
+
+        
+    
+    
+            var circle_marker_be0b6bd37e7c485c8f85037a9e9874b3 = L.circleMarker(
+                [42.875729, 74.618729],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3db7e4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_945e538cf96c4c84843f5e99a9a19ef0);
+        
+    
+        var popup_9d1ab69414a74ebc9b94596ec5f743bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01748d9057d246e6818bdb2860c1d3f6 = $(`<div id="html_01748d9057d246e6818bdb2860c1d3f6" style="width: 100.0%; height: 100.0%;">г.Бишкек, пр.Чуй,д.147(ТЦ “Детский Мир”)</div>`)[0];
+            popup_9d1ab69414a74ebc9b94596ec5f743bb.setContent(html_01748d9057d246e6818bdb2860c1d3f6);
+        
+
+        circle_marker_be0b6bd37e7c485c8f85037a9e9874b3.bindPopup(popup_9d1ab69414a74ebc9b94596ec5f743bb)
+        ;
+
+        
+    
+</script>
